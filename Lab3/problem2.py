@@ -10,6 +10,7 @@ from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 import pandas as pd
 import operator
+import scipy
 
 
 
@@ -79,7 +80,8 @@ covar[2][0] = covar[0][2]
 covar[2][1] = covar[1][2]
 covar[2][2] = find_cov(ds_3, ds_3, 40)
 
-#print(covar)
+print(covar)
+print np.cov((ds_1, ds_2, ds_3))
 
 ################################part four####################################
 
@@ -97,6 +99,4 @@ fig2 = plt.figure()
 ax2 = fig2.add_subplot(111)
 ax2.plot(vectors[index])
 ax2.plot(vectors[index2])
-
-
-
+plt.show()
