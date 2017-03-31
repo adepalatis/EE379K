@@ -3,3 +3,5 @@
 *.iml/
 *.ipynb_checkpoints/
 *.zip
+*.pyc
+*/submission.csv
